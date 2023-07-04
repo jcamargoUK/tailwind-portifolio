@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillTwitterCircle, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai'
 import  owl  from '/public/owl.png'
+import eamon from '/public/eamon.png'
 
 export default function Home() {
   return (
@@ -63,31 +64,29 @@ export default function Home() {
             '
           >
             <Image
-                src={owl}
+            className=' mx-auto rounded-xl'
+                src={eamon}
                 alt='Picture of the author'
-                object-fit="cover"
+                width={200}
+                height={200}
+                // object-fit="cover"
                 
             />
           </div>
         </section>
         <section>
-          <div>
-            <h3 className='text-3xl py-1'>Service that I offer</h3>
-            <p className='text-md- py-2 leading-8 text-gray-800'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.
-              Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.
-              Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.
+          <div className='text-center p-10'>
+            <h3 className='text-3xl py-1 text-teal-600'>Service that I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I offer a range of services to help you bring your web projects to life. Whether  you're a small business owner looking to establish your online presence or a fellow freelancer in need of an extra pair of hands.
             </p>
-            <p className='text-md- py-2 leading-8 text-gray-800'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.
-              Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I can provide the expertise and skills necessary to deliver exceptional front-end development solutions.
             </p>
           </div>
           <div>
             <div>
-              
+
             </div>
           </div>
         </section>
