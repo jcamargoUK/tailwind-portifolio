@@ -3,11 +3,15 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillTwitterCircle, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai'
 import  owl  from '/public/owl.png'
 import eamon from '/public/eamon.png'
+import news from '/public/news.png'
+import music from '/public/music.png'
+import search from '/public/search.png'
+
 
 export default function Home() {
   return (
     <div>
-      <main>
+      <main className='bg-white md:px-20 lg:px-40'>
         <section 
           className='
             min-h-screen 
@@ -34,9 +38,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Julio Camargo</h2>
-            <h3 className='text-2xl py-2'>Front-end Developer</h3>
-            <p className=' text-md py-5 leading-8 text-gray-800'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl lg:text-7xl'>Julio Camargo</h2>
+            <h3 className='text-3xl py-2 md:text-4xl'>Front-end Developer</h3>
+            <p className=' text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl m-auto'>
               I'm a Front-end Developer with 2 years of experience. I'm currently freelancing as a Front-end Developer.
             </p>
           </div>
@@ -64,30 +68,112 @@ export default function Home() {
             '
           >
             <Image
-            className=' mx-auto rounded-xl'
+            className=' mx-auto rounded-xl md:h-64 md:w-64'
                 src={eamon}
                 alt='Picture of the author'
                 width={200}
                 height={200}
                 // object-fit="cover"
-                
             />
           </div>
         </section>
         <section>
-          <div className='text-center p-10'>
-            <h3 className='text-3xl py-1 text-teal-600'>Service that I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+          <div className='text-left p-10'>
+            <h3 className='text-3xl py-1 text-teal-600 md:text-5xl'>Service I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 md:text-lg'>
               I offer a range of services to help you bring your web projects to life. Whether  you're a small business owner looking to establish your online presence or a fellow freelancer in need of an extra pair of hands.
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+            <p className='text-md py-2 leading-8 text-gray-800 md:text-lg'>
               I can provide the expertise and skills necessary to deliver exceptional front-end development solutions.
             </p>
           </div>
+          <div className='gap-2 md:flex md:gap-4'>
           <div>
-            <div>
-
+            <div 
+              className='
+              text-center 
+              shadow-lg 
+              rounded-xl 
+              my-10 
+              mx-2 
+              p-10'
+              >
+              <Image
+              className=' mx-auto'
+              alt='news icon'
+              src={news} 
+              width={100}
+              height={100}
+              />
+              <h3 className='text-lg font-medium py-1 pt-8 pb-2 text-teal-600 md:text-4xl'>Beautiful Designs</h3>
+              <p className='text-md py-2 leading-8 text-gray-800'>Beautiful designs that are easy to use and pleasing to the eye.</p>
+              <h4 className='py-4 text-teal-600'>Design Tools I use</h4>
+              <p className=' text-gray-800 py-1'>Photoshop</p>
+              <p className=' text-gray-800 py-1'>Illustrator</p>
+              <p className=' text-gray-800 py-1'>Figma</p>  
             </div>
+          </div>
+          <div>
+            <div 
+              className='
+              text-center 
+              shadow-lg 
+              rounded-xl 
+              my-10 
+              mx-2 
+              p-10'
+              >
+              <Image
+              className=' mx-auto'
+              alt='news icon'
+              src={music} 
+              width={100}
+              height={100}
+              />
+              <h3 className='text-lg font-medium py-1 pt-8 pb-2 text-teal-600 md:text-4xl'>Beautiful Designs</h3>
+              <p className='text-md py-2 leading-8 text-gray-800'>Beautiful designs that are easy to use and pleasing to the eye.</p>
+              <h4 className='py-4 text-teal-600'>Design Tools I use</h4>
+              <p className=' text-gray-800 py-1'>Photoshop</p>
+              <p className=' text-gray-800 py-1'>Illustrator</p>
+              <p className=' text-gray-800 py-1'>Figma</p>
+            </div>
+          </div>
+          <div>
+            <div 
+              className='
+              text-center 
+              shadow-lg 
+              rounded-xl 
+              my-10 
+              mx-2 
+              p-10'
+              >
+              <Image
+              className=' mx-auto'
+              alt='news icon'
+              src={search} 
+              width={100}
+              height={100}
+              />
+              <h3 className='text-lg font-medium py-1 pt-8 pb-2 text-teal-600 md:text-4xl'>Beautiful Designs</h3>
+              <p className='text-md py-2 leading-8 text-gray-800'>Beautiful designs that are easy to use and pleasing to the eye.</p>
+              <h4 className='py-4 text-teal-600'>Design Tools I use</h4>
+              <p className=' text-gray-800 py-1'>Photoshop</p>
+              <p className=' text-gray-800 py-1'>Illustrator</p>
+              <p className=' text-gray-800 py-1'>Figma</p>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section>
+          <div className='text-left p-10'>
+            <h3 className='text-3xl py-1 text-teal-600 md:text-5xl'>Portifolio</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 md:text-lg'>
+              I offer a range of services to help you bring your web projects to life. Whether  you're a small business owner looking to establish your online presence or a fellow freelancer in need of an extra pair of hands.
+            </p>
+            <p className='text-md py-2 leading-8 text-gray-800 md:text-lg'>
+              I can provide the expertise and skills necessary to deliver exceptional front-end development solutions.
+            </p>
           </div>
         </section>
       </main>
