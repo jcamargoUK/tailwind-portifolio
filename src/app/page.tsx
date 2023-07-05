@@ -6,6 +6,10 @@ import eamon from '/public/eamon.png'
 import news from '/public/news.png'
 import music from '/public/music.png'
 import search from '/public/search.png'
+import drawing from '/public/drawing.jpg'
+import macbookpro from '/public/macbookpro.jpg'
+import visualdesign from '/public/visualdesign.jpg'
+import wireframe from '/public/wireframe.jpg'
 
 
 export default function Home() {
@@ -174,6 +178,43 @@ export default function Home() {
             <p className='text-md py-2 leading-8 text-gray-800 md:text-lg'>
               I can provide the expertise and skills necessary to deliver exceptional front-end development solutions.
             </p>
+          </div>
+        </section>
+        <section>
+          <div className='text-center p-10 shadow-lg rounded-xl my-10 mx-2'>
+            <h3 className='text-3xl py-1 text-teal-600 md:text-5xl'>Some of my work</h3>
+          </div>
+          <div className='flex flex-col gap-10 px-4 lg:flex-row lg:flex-wrap'>
+            <div className='basis-1/3 flex-1'>
+              <Image
+              className=' rounded-lg object-cover'
+              
+              alt='drawing image'
+              src={wireframe}
+              
+              />
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image
+              className=' rounded-lg object-cover'
+              alt='drawing image'
+              src={visualdesign}
+              />
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image
+              className=' rounded-lg object-cover'
+              alt='drawing image'
+              src={drawing}
+              />
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image
+              className=' rounded-lg object-cover ' 
+              alt='drawing image'
+              src={macbookpro}
+              />
+            </div>
           </div>
         </section>
       </main>
