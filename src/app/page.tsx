@@ -191,9 +191,9 @@ export default function Home() {
               <h3 className='text-lg font-medium py-1 pt-8 pb-2 text-teal-600 md:text-4xl'>Beautiful Designs</h3>
               <p className='text-md py-2 leading-8 text-gray-800'>Beautiful designs that are easy to use and pleasing to the eye.</p>
               <h4 className='py-4 text-teal-600'>Design Tools I use</h4>
-              <p className=' text-gray-800 py-1'>Photoshop</p>
-              <p className=' text-gray-800 py-1'>Illustrator</p>
-              <p className=' text-gray-800 py-1'>Figma</p>
+              <p className=' text-gray-800 py-1 dark:text-teal-600'>Photoshop</p>
+              <p className=' text-gray-800 py-1 dark:text-teal-600'>Illustrator</p>
+              <p className=' text-gray-800 py-1 dark:text-teal-600'>Figma</p>
             </div>
           </div>
           </div>
