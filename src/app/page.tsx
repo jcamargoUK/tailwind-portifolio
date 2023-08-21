@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-import { BsFillMoonStarsFill } from 'react-icons/bs'
+import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs'
 import { AiFillTwitterCircle, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai'
 import  owl  from '/public/owl.png'
 import eamon from '/public/eamon.png'
@@ -33,10 +33,17 @@ export default function Home() {
             <h1 className='text-xl font-burtons dark:text-teal-600'>DEVELOPED BY</h1>
             <ul className='flex items-center'>
               <li>
-                < BsFillMoonStarsFill 
-                onClick={() => setDarkMode(!darkMode)}
-                className=
-                'cursor-pointer text-xl dark:text-teal-600'/>
+                {darkMode ? ( // Conditional rendering
+                  <BsFillSunFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className='cursor-pointer text-xl dark:text-teal-600'
+                  />
+                ) : (
+                  <BsFillMoonStarsFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className='cursor-pointer text-xl dark:text-teal-600'
+                  />
+                )}
               </li>
               <li>
                 <a 
@@ -159,9 +166,9 @@ export default function Home() {
               <h3 className='text-lg font-medium py-1 pt-8 pb-2 text-teal-600 md:text-4xl'>Beautiful Designs</h3>
               <p className='text-md py-2 leading-8 text-gray-800'>Beautiful designs that are easy to use and pleasing to the eye.</p>
               <h4 className='py-4 text-teal-600'>Design Tools I use</h4>
-              <p className=' text-gray-800 py-1'>Photoshop</p>
-              <p className=' text-gray-800 py-1'>Illustrator</p>
-              <p className=' text-gray-800 py-1'>Figma</p>
+              <p className=' text-gray-800 py-1 dark:text-teal-600'>Photoshop</p>
+              <p className=' text-gray-800 py-1 dark:text-teal-600'>Illustrator</p>
+              <p className=' text-gray-800 py-1 dark:text-teal-600'>Figma</p>
             </div>
           </div>
           <div>
